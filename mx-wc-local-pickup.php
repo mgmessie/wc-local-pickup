@@ -141,7 +141,7 @@ if (!class_exists('MXWC_Shipping_Options')) {
                     'enabled' => array(
                         'title' => __('Enable', 'woocommerce'),
                         'type' => 'checkbox',
-                        'label' => __('Enable Click & collect ', 'mx-wc-local-pickup'),
+                        'label' => __('Activer Click & collect ', 'mx-wc-local-pickup'),
                         'default' => 'no'
                     ),
                     'title' => array(
@@ -412,7 +412,7 @@ if (!class_exists('MXWC_Shipping_Options')) {
                     echo '<tr class="shipping_option">';
                     echo '<th> ' . __('Boutique', 'mx-wc-local-pickup') . ': </th>';
                     echo '<td><select style="max-width:150px;" name="shipping_option" class="input-select" id="shipping_option" required="required">';
-                    echo '<option value=""> ' . __('Selectionnez une boutique', 'mx-wc-local-pickup') . ' </option>';
+                    echo '<option data-description="' . __('Selectionnez une boutique', 'mx-wc-local-pickup') . '" value=""> ' . __('Selectionnez une boutique', 'mx-wc-local-pickup') . ' </option>';
                     $description = "";
                     for ($i = 0; $i < count($this->shipping_options['shop_name']); $i++) {
                         echo '<option  data-description= "' . $this->shipping_options['description'][$i] . '" value="' . esc_attr($this->shipping_options['shop_name'][$i]) . '" ' . selected($woocommerce->session->_chosen_shipping_option, esc_attr($this->shipping_options['shop_name'][$i])) . '>' . $this->shipping_options['shop_name'][$i] . '</option>';

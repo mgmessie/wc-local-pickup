@@ -1,13 +1,10 @@
 <?php
 /*
-Plugin Name: Click & collect
-Plugin URI: 
-Description: 
-Text Domain:: 
-Domain Path: /languages/
-Version: 1.0
-Author: 
-Author URI: h
+*Plugin Name: Click & collect
+*Plugin URI: https://github.com/mgmessie/wc-local-pickup
+*Version: 1.0
+*Author: Messie MOUKIMOU 
+*Author URI: https://github.com/mgmessie/
 */
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
